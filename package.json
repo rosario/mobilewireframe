@@ -1,0 +1,9 @@
+{
+  "name": "starsecrets",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "1.1.1",
+    "express": "2.3.2",
+    "jade" : "0.13.0"
+  }
+}
