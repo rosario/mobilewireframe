@@ -73,11 +73,18 @@ html.no-js(manifest="default.appcache?v=1")
     
     script
       // Sistemo la toolbar dopo un rotation
-      window.onorientationchange = function() {
-        setTimeout(function () {
-          window.scrollTo(0, 1);
-        }, 1000);
-      }
+      var supportsOrientationChange = "onorientationchange" in window,
+          orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+      window.addEventListener(orientationEvent, function() {
+          alert('HOLY ROTATING SCREENS BATMAN:' + window.orientation + " " + screen.width);
+      }, false);
+      
+      
+      // window.onorientationchange = function() {
+      //   setTimeout(function () {
+      //     window.scrollTo(0, 1);
+      //   }, 1000);
+      // }
       
       // nascondo la toolbar se e' un Android
       if(navigator.userAgent.match(/Android/i) && !pageYOffset && !location.hash){ 
