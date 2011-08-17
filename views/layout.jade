@@ -48,7 +48,6 @@ html.no-js(manifest="default.appcache?v=1")
     script(src="/boilerplate/js/libs/modernizr-custom.js")
     
     // MIO:
-    script(src="js/iphone.js")        
     link(rel="stylesheet", type="text/css", href="css/iphone.css", media="only screen and (max-width: 480px)")
     link(rel="stylesheet", type="text/css", href="css/iphone.css", media="screen and (min-width: 481px)")
     
@@ -71,7 +70,7 @@ html.no-js(manifest="default.appcache?v=1")
     // scripts concatenated and minified via ant build script 
     script(src="/boilerplate/js/mylibs/helper.js")
     // end concatenated and minified scripts
-
+    
     script
       // iPhone Scale Bug Fix, read this when using http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/
       MBP.scaleFix();
@@ -80,8 +79,9 @@ html.no-js(manifest="default.appcache?v=1")
         test : Modernizr.mq('(min-width)'),
         nope : ['/boilerplate/js/libs/respond.min.js']
       });
-
+    
     // Debugger - remove for production 
-    // <script src="https://getfirebug.com/firebug-lite.js"></script> 
+    //script(src="https://getfirebug.com/firebug-lite.js")
+    script(src="js/iphone.js")            
 
-    // mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID 
+    
