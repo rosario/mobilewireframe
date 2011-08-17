@@ -31,9 +31,10 @@ html.no-js(manifest="default.appcache?v=1")
     // For nokia devices: 
     link(rel="shortcut icon", href="/boilerplate/img/l/apple-touch-icon.png")
     //iOS web app, deletable if not needed 
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    
     //
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      meta(name="apple-mobile-web-app-status-bar-style", content="black")
       link(rel="apple-touch-startup-image", href="img/l/splash.png")
     // Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading 
     meta(http-equiv="cleartype", content="on")
@@ -45,6 +46,12 @@ html.no-js(manifest="default.appcache?v=1")
     
     // All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects 
     script(src="/boilerplate/js/libs/modernizr-custom.js")
+    
+    // MIO:
+    script(src="js/iphone.js")        
+    link(rel="stylesheet", type="text/css", href="css/iphone.css", media="only screen and (max-width: 480px)")
+    link(rel="stylesheet", type="text/css", href="css/iphone.css", media="screen and (min-width: 481px)")
+    
     
     
   body
