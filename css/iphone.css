@@ -30,6 +30,10 @@ body {
     white-space: nowrap; 
     text-overflow: ellipsis;
 } 
+
+
+
+/* SETTINGS STYLE FOR LISTS*/
 #list ul { 
     list-style: none; 
     margin: 10px; 
@@ -58,6 +62,10 @@ body {
     background-color:blue; 
     color:white; 
 } 
+
+
+
+
 
 #content { 
     padding: 10px; 
@@ -145,3 +153,48 @@ body {
   height:115px;
 }
 
+
+
+/* CALENDAR*/
+#fancy ul { 
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+} 
+#fancy ul li a{ 
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FDFDFD)); 
+    border-bottom: 1px solid #bbb;
+    display: block; 
+    font-size: 17px; 
+    font-weight: bold; 
+    padding: 20px 10px; 
+    text-decoration: none;     
+    text-shadow: white 0px 1px 1px;
+    color: #C70A88;
+    width:90%; 
+} 
+/*#fancy a{
+  text-decoration: none;
+  text-shadow: white 0px 1px 1px;
+
+}
+*/
+#fancy img{
+  float:left;
+}
+#fancy .inner{
+/*  min-height: 62px;*/
+/*  padding: 0px 20px 0px 64px;*/
+  margin-left:60px;
+  min-height:60px;
+  display:block;
+}
+
+#fancy ul li a:active, #fancy ul li a:hover { 
+    background-color:blue; 
+    color:#333; 
+} 
+
+#fany img.arrow{
+  position:relative;
+}

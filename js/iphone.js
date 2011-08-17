@@ -42,6 +42,7 @@
 
 
 $(document).ready(function(){ 
+
    $('#progress').remove(); 
    $('#header .leftButton').click(function(e){ 
      $(e.target).addClass('clicked');

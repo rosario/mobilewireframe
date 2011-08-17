@@ -19,6 +19,11 @@ app.get('/about', function(req, res){
  res.render('about');
 });
 
+app.get('/calendar', function(req, res){ 
+ res.render('calendar');
+});
+
+
 app.get('/iphone', function(req, res){ 
  res.render('iphone');
 });
