@@ -4,6 +4,6 @@
   "dependencies": {
     "coffee-script": "1.1.1",
     "express": "2.3.2",
-    "jade" : "0.13.0"
+    "jade" : "0.14.2"
   }
 }

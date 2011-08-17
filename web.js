@@ -5,7 +5,7 @@ app.set('view engine', 'jade');
 app.use('/css', express.static(__dirname + '/css')); 
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/images', express.static(__dirname + '/images')); 
- 
+app.use('/boilerplate', express.static(__dirname + '/boilerplate'));
 
 // app.use(express.favicon(__dirname + '/images/favicon.ico', { maxAge: 2592000000 }));
 
