@@ -72,10 +72,11 @@ html.no-js(manifest="default.appcache?v=1")
     // end concatenated and minified scripts
     
     script
-      // Dico di fare un reload se viene ruotato il telefonino
+      // Sistemo la toolbar dopo un rotation
       window.onorientationchange = function() {
-        alert('ciaop');
-        location.reload();
+        setTimeout(function () {
+          window.scrollTo(0, 1);
+        }, 1000);
       }
       
       // nascondo la toolbar se e' un Android
