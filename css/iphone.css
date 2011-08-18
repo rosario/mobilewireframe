@@ -161,18 +161,19 @@ body {
     list-style: none; 
     margin: 0;
     padding: 0; 
-} 
-
-.fancy.inset ul{
-  margin:10px;
 }
 
 .fancy ul li{
   position: relative;
 }
+
+.fancy.inset ul{
+  margin:10px;
+}
+
+
+
 .fancy ul li a{ 
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FDFDFD)); 
-    border-bottom: 1px solid #bbb;
     display: block; 
     font-size: 17px; 
     font-weight: bold; 
@@ -180,27 +181,21 @@ body {
     text-decoration: none;     
     text-shadow: white 0px 1px 1px;
     color: #C70A88;
+    margin-left:60px;
+} 
+.fancy ul li a:active, .fancy ul li a:hover { 
+    color:#650A83; 
 } 
 
 
-/**/
-.fancy.inset ul li:first-child a { 
+.fancy ul li:first-child .inner{ 
     -webkit-border-top-left-radius: 8px; 
     -webkit-border-top-right-radius: 8px; 
 } 
-.fancy.inset ul li:last-child a { 
+.fancy ul li:last-child .inner{ 
     -webkit-border-bottom-left-radius: 8px; 
     -webkit-border-bottom-right-radius: 8px; 
 } 
-.fancy.inset ul li a:active, #list ul li a:hover { 
-    background-color:blue; 
-    color:white; 
-} 
-
-/**/
-
-
-
 
 
 .fancy .thumb{
@@ -213,14 +208,12 @@ body {
   right:0px;
 }
 .fancy .inner{
-  margin-left:60px;
   min-height:60px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#FDFDFD)); 
+  border-bottom: 1px solid #bbb;
+  
 }
 
-.fancy ul li a:active, #fancy ul li a:hover { 
-    background-color:blue; 
-    color:#333; 
-} 
 
 
 /*CONTENT*/
