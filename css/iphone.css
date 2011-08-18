@@ -124,7 +124,8 @@ body {
 
 
 #index{
-  margin:10px 0px 10px;
+  margin:20px 0px 20px;
+  padding:10px 0px 10px;
   text-align:center;  
   width:100%;
   display:block;
@@ -200,14 +201,16 @@ body {
 /*CONTENT*/
 
 .title{
-  background:yellow;
+/*  background:yellow;*/
   padding:5px 10px 5px;
   position:relative;
 }
 
 .title h2{
   font-size:18px;
-  color:blue;
+  color: #C70A88;
+  text-shadow: #CCC 1px 1px 1px;
+  
 }
 .title small{
   font-size:13px;
@@ -215,7 +218,7 @@ body {
 }
 img.rating{
   position:absolute;
-  top:5px;
+  top:8px;
   right:10px;
 /*  float:right;*/
   width:90px;
@@ -229,4 +232,17 @@ img.rating{
 .article{
   padding:5px 10px 5px;
 
+}
+.navigation{
+  margin:5px 10px 5px;
+  text-align:center;
+}
+.prev{
+
+  float:left;
+}
+
+.forward{
+
+  float:right;
 }
