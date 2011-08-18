@@ -42,6 +42,21 @@
 
 
 $(document).ready(function(){ 
+    // Sistemo la toolbar dopo un rotation
+    var supportsOrientationChange = "onorientationchange" in window,
+        orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+    window.addEventListener(orientationEvent, function() {
+        window.scrollTo(0, 1);
+    }, false);
+  
+  
+  
+    // nascondo la toolbar se e' un Android
+    if(navigator.userAgent.match(/Android/i) && !pageYOffset && !location.hash){ 
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 1000);
+    };
 
    $('#progress').remove(); 
    $('#header .leftButton').click(function(e){ 
