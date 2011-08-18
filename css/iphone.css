@@ -196,3 +196,37 @@ body {
     color:#333; 
 } 
 
+
+/*CONTENT*/
+
+.title{
+  background:yellow;
+  padding:5px 10px 5px;
+  position:relative;
+}
+
+.title h2{
+  font-size:18px;
+  color:blue;
+}
+.title small{
+  font-size:13px;
+  color:black;
+}
+img.rating{
+  position:absolute;
+  top:5px;
+  right:10px;
+/*  float:right;*/
+  width:90px;
+  height:auto;
+}
+
+.photo img{
+  width:100%;
+
+}
+.article{
+  padding:5px 10px 5px;
+
+}

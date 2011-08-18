@@ -23,6 +23,10 @@ app.get('/calendar', function(req, res){
  res.render('calendar');
 });
 
+app.get('/content', function(req, res){ 
+ res.render('content');
+});
+
 
 app.get('/iphone', function(req, res){ 
  res.render('iphone');
