@@ -46,9 +46,9 @@ $(document).ready(function(){
     // var supportsOrientationChange = "onorientationchange" in window,
     //     orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
     
-    window.addEventListener('orientationchange', function() {
-        window.scrollTo(0, 1);
-    }, false);
+    // window.addEventListener('orientationchange', function() {
+    //     window.scrollTo(0, 1);
+    // }, false);
   
   
   
