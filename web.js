@@ -27,6 +27,11 @@ app.get('/content', function(req, res){
  res.render('content');
 });
 
+app.get('/settings', function(req, res){ 
+ res.render('settings');
+});
+
+
 
 app.get('/iphone', function(req, res){ 
  res.render('iphone');
