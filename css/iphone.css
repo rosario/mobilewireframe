@@ -104,7 +104,7 @@ body {
     overflow: hidden; 
     text-overflow: ellipsis; 
     border-width: 0 8px 0 14px; 
-    -webkit-border-image: url(/images/back_button.png) 0 8 0 14; 
+    -webkit-border-image: url(/images/theme/back_button.png) 0 8 0 14; 
 /*    -webkit-tap-highlight-color: rgba(0,0,0,0); */
     
 }
@@ -219,7 +219,6 @@ body {
 /*CONTENT*/
 
 .title{
-/*  background:yellow;*/
   padding:5px 10px 5px;
   position:relative;
 }
@@ -228,6 +227,10 @@ body {
   font-size:18px;
   color: #C70A88;
   text-shadow: #CCC 1px 1px 1px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  width:75%
   
 }
 .title small{
@@ -239,7 +242,7 @@ img.rating{
   top:8px;
   right:10px;
 /*  float:right;*/
-  width:90px;
+  width:75px;
   height:auto;
 }
 
