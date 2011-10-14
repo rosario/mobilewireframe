@@ -15,16 +15,12 @@ app.get('/', function(req, res){
 });
 
 
-app.get('/about', function(req, res){ 
- res.render('about');
+app.get('/list', function(req, res){ 
+ res.render('list');
 });
 
-app.get('/calendar', function(req, res){ 
- res.render('calendar');
-});
-
-app.get('/content', function(req, res){ 
- res.render('content');
+app.get('/page', function(req, res){ 
+ res.render('page');
 });
 
 app.get('/settings', function(req, res){ 
@@ -33,11 +29,7 @@ app.get('/settings', function(req, res){
 
 
 
-app.get('/iphone', function(req, res){ 
- res.render('iphone');
-});
-
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 app.listen(port, function(){
   console.log("Listening on " + port);
 });
