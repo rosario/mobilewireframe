@@ -11,3 +11,7 @@ There are only three pages, and index page, a list view, and a content page.
 ## Demo
 
 There's a running demo on hosted on heroku, [demo](http://growing-window-514.herokuapp.com/ "demo"), best viewed on mobile.
+
+## Icons
+
+Icons from [pixeden.com](http://www.pixeden.com/social-icons/dark-social-icons-set "pixeden")
